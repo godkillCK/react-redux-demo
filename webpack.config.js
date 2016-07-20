@@ -5,7 +5,7 @@ var HtmlwebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-    entry: './src/app/index/index.js',
+    entry: './src/index.js',
     output: {
         path: __dirname + '/dist',
         filename: 'bundle.js'
@@ -33,7 +33,7 @@ module.exports = {
             }
         }),
         new HtmlwebpackPlugin({
-            title: 'learn-react',
+            title: 'react-redux-demo',
             filename: 'index.html',
             template: 'src/index.html'
         }),
